@@ -91,3 +91,5 @@ for i in marks:
     i += 5
     i = i + 5
     print(i)
+
+print(len(marks))
