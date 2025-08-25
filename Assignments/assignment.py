@@ -149,35 +149,127 @@ Your program should:
 
 """
 
-num_courses = int(input('Enter the number of courses taken: '))
+# num_courses = int(input('Enter the number of courses taken: '))
 
-course_names = []
-grades = []
+# course_names = []
+# grades = []
 
-for i in range(num_courses):
-    course_name = input('Enter the name of the course taken: ')
-    course_names.append(course_name)
+# for i in range(num_courses):
+#     course_name = input('Enter the name of the course taken: ')
+#     course_names.append(course_name)
 
-for i in range(num_courses):
-    grade = float(input(f'Enter the grade you have gotten for {course_names[i]}: '))
-    grades.append(grade)
+# for i in range(num_courses):
+#     grade = float(input(f'Enter the grade you have gotten for {course_names[i]}: '))
+#     grades.append(grade)
 
 
-total_grade = 0
-for grade in grades:
-    total_grade += grade
+# total_grade = 0
+# for grade in grades:
+#     total_grade += grade
 
-average = total_grade / len(grades)
-print(f'Average grade is: {average}')
+# average = total_grade / len(grades)
+# print(f'Average grade is: {average}')
 
-highest_grade = 0
-lowest_grade = 100
-for grade in grades:
-    if grade > highest_grade:
-        highest_grade = grade
+# highest_grade = 0
+# lowest_grade = 100
+# for grade in grades:
+#     if grade > highest_grade:
+#         highest_grade = grade
 
-    if grade < lowest_grade:
-        lowest_grade = grade
+#     if grade < lowest_grade:
+#         lowest_grade = grade
 
-print(F'Lowest grade: {lowest_grade}')
-print(F'Highest grade: {highest_grade}')
+# print(F'Lowest grade: {lowest_grade}')
+# print(F'Highest grade: {highest_grade}')
+
+
+'''
+# Q1: Create a list of 5 fruits and print it.
+# Q2: How can you access the third item in a list?
+# Q3: What happens if you try to access an index that doesn't exist?
+
+# Q4: Given the list: colors = ['red', 'green', 'blue', 'yellow', 'pink']
+#     Write code to print:
+#     a) The first element
+#     b) The last element
+#     c) Elements from index 1 to 3
+
+# Q5: What does this code output?
+#     nums = [10, 20, 30, 40, 50]
+#     print(nums[1:4])
+
+
+# Q6: Add "grape" to the list: fruits = ['apple', 'banana']
+# Q7: Change the second item in a list to "kiwi"
+# Q8: Remove "banana" from the list
+
+# Q9: What will be the output of the following?
+#     a = [3, 1, 4, 1, 5]
+#     a.sort()
+#     print(a)
+
+# Q10: What does list.append() do? How is it different from list.extend()?
+
+# Q11: Remove duplicates from this list:
+#     numbers = [1, 2, 2, 3, 4, 4, 4, 5]
+
+# Q12: Print each element of the list using a for loop.
+# Q13: Create a new list that contains only the even numbers from:
+#      nums = [1, 2, 3, 4, 5, 6]
+
+# Q14: Use a loop to find the largest number in this list:
+#      a = [4, 8, 2, 9, 5]
+
+'''
+
+fruits = ['apple','melon','orange','mango','strawberry']
+print(f'The list of fruits are: {fruits}')
+
+third_item = fruits[2]
+print(f'The third item in the list is: {third_item}')
+
+
+# item_not_exist = fruits[5]
+# print(item_not_exist)
+'''
+Since the item is not in the range of our list the error will be:
+IndexError: list index out of range
+'''
+
+colors = ['red', 'green', 'blue', 'yellow', 'pink']
+first_element = colors[0]
+third_element = colors[2]
+element_one_to_three = colors[1:4]
+
+print(f'''The first element in the list is: {first_element} . 
+          The third element is: {third_element} .
+          Elements from one to three is: {element_one_to_three}
+       ''')
+
+# fruits = ['apple', 'banana']
+# fruits.append('grape')
+# fruits[1] = 'kiwi'
+
+for i in fruits:
+    print(i)
+
+numbers = [1, 2, 2, 3, 4, 4, 4, 5]
+removed_dups = list(set(numbers))
+print(removed_dups)
+
+
+even_numbers = []
+for i in removed_dups:
+    if i % 2 == 0:
+        even_numbers.append(i)
+
+print(f'Even numbers are: {even_numbers}')
+
+
+a = [4, 8, 2, 9, 5]
+largest_number = 0
+for l in a:
+    if l > largest_number:
+        largest_number = l 
+
+print(f'The largest number is: {largest_number}')
