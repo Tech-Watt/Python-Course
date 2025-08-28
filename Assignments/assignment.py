@@ -250,6 +250,7 @@ print(f'''The first element in the list is: {first_element} .
 # fruits.append('grape')
 # fruits[1] = 'kiwi'
 
+
 for i in fruits:
     print(i)
 
