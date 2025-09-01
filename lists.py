@@ -87,9 +87,20 @@ marks = [65,44,67,76,86]
 # marks[4] +=5
 # print(marks)
 
+
+# List unpacking
+numbers = [1, 2, 3, 4, 5]
+a, b, c, d, e = numbers
+
 for i in marks:
     i += 5
     i = i + 5
     print(i)
 
 print(len(marks))
+
+
+list_1 = [1, 2, 3]
+list_2  = [4, 5, 6]
+joint_list = list_1 + list_2
+print(f'Joint List: {joint_list}')
