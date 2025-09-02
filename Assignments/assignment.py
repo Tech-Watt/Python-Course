@@ -274,3 +274,38 @@ for l in a:
         largest_number = l 
 
 print(f'The largest number is: {largest_number}')
+
+
+'''
+Create a tuple with the values 10, 20, 30, 40. Print the second element.
+
+Convert a list [1, 2, 3, 4, 5] into a tuple.
+
+Find the length of the tuple ("apple", "banana", "cherry", "orange").
+
+Check if the number 50 exists in the tuple (10, 20, 30, 40, 50).
+
+Create a single-element tuple containing the value "Python".
+
+Given numbers = (5, 10, 15, 20, 25), slice the tuple to get (10, 15, 20).
+
+Unpack the tuple student = ("John", 21, "Computer Science") into variables name, age, and course.
+
+Concatenate two tuples (1, 2, 3) and (4, 5, 6) into one.
+
+Count how many times the value 3 appears in the tuple (1, 3, 5, 3, 7, 3, 9).
+
+Find the index of "banana" in the tuple ("apple", "banana", "cherry", "banana").
+
+Write a program to convert a tuple of tuples ((1, 2), (3, 4), (5, 6)) into a flat tuple (1, 2, 3, 4, 5, 6).
+
+Given a tuple (10, 20, 30, 40, 50), reverse it without using slicing.
+
+Sort the tuple (3, 1, 4, 2, 5) in ascending order. (Hint: convert to list first).
+
+Write a program to check if all elements in the tuple (2, 4, 6, 8) are even.
+
+Create a tuple of strings and join them into a single string. Example: ("AI", "is", "the", "future") → "AI is the future".
+
+
+'''
