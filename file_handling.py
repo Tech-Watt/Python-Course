@@ -29,7 +29,7 @@ They lived happily ever after, ruling the kingdom with wisdom and compassion.
 The end.
 """
 
-# writing to a file
+# # writing to a file
 # f = open('story.txt', 'w')
 # f.write(story)
 # f.close()
@@ -38,10 +38,18 @@ The end.
 #     f.write(story)
 
 
-# reading from a file
+# # reading from a file
 # f = open('story.txt', 'r')
 # print(f.read())
 # f.close()
 
 # with open('story.txt', 'r') as f:
 #     print(f.read())
+
+
+# appending to a file
+with open('story.txt', 'a') as f:
+    f.write("And they lived happily ever after.")
+
+
+
